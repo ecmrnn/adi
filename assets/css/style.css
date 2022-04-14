@@ -9,6 +9,7 @@
   3) TYPOGRAPHY
   4) COMPONENTS
   5) UTILITIES 
+  6) MEDIA QUERIES
   ================= */
 
 /*================= 
@@ -84,6 +85,11 @@ label {
   font-weight: 700;
 }
 
+.description {
+  max-width: 50ch;
+  margin: auto;
+}
+
 .link--bantay {
   color: var(--clr-accent);
   font-weight: 700;
@@ -107,6 +113,7 @@ button {
   background-color: var(--clr-accent);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
+  cursor: pointer;
 }
 
 #login {
@@ -122,4 +129,16 @@ button {
   .grid--center {
     display: grid;
     place-items: center;
+  }
+
+/*================= 
+    MEDIA QUERIES
+  ================= */
+
+  @media (min-width: 1080px) {
+    body {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-content: center;
+    }
   }
