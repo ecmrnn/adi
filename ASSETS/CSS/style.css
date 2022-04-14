@@ -1,0 +1,89 @@
+/* USED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
+/*=================
+  TABLE OF CONTENTS
+  =================
+  1) GLOBAL STYLES
+  2) LAYOUT
+  3) TYPOGRAPHY
+  4) COMPONENTS
+  5) UTILITIES 
+  ================= */
+
+/*================= 
+    GLOBAL STYLES 
+  ================= */
+
+:root {
+  /* VARIABLES */
+  --clr-primary: #FFE4E1;
+  --clr-accent: #CC2936;
+  --clr-dark: #394648;
+  --clr-light: #9BBEC7;
+  --pm-1: 1em;
+  --pm-2: 2em;
+  --pm-3: 3em;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+/*================= 
+        LAYOUT
+  ================= */
+
+.login__form {
+  padding: var(--pm-2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border: 1px solid var(--clr-dark);
+  border-radius: 1em;
+  box-shadow: 1em 1em 0 var(--clr-dark);
+}
+
+.login__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login__header {
+  max-width: 25em;
+  text-align: right;
+}
+
+/*================= 
+      TYPOGRAPHY
+  ================= */
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 4rem;
+}
+
+
+/*================= 
+      COMPONENTS
+  ================= */
+
+
+
+/*================= 
+      UTILITIES
+  ================= */
