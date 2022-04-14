@@ -24,6 +24,7 @@
   --pm-1: 1em;
   --pm-2: 2em;
   --pm-3: 3em;
+  --br-1: 0.5rem;
 }
 
 *,
@@ -32,27 +33,86 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: 'Segoe UI';
+  color: var(--clr-dark);
 }
 
 /*================= 
         LAYOUT
   ================= */
 
+.container {
+  padding: var(--pm-3);
+  width: 100%;
+}
+
+.login__header {
+  height: 100vh;
+  background-color: var(--clr-primary);
+  text-align: center;
+}
+
+.login__main {
+  height: 100vh;
+}
+
 .login__container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 /*================= 
       TYPOGRAPHY
   ================= */
 
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.link--bantay {
+  color: var(--clr-accent);
+  font-weight: 700;
+}
+
 /*================= 
       COMPONENTS
   ================= */
 
+input,
+button {
+  margin-bottom: 0.5em;
+  padding: var(--pm-1);
+  
+  background-color: var(--clr-primary);
+  border: 0;
+  border-radius: var(--br-1);
+}
+
+button {
+  background-color: var(--clr-accent);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+#login {
+  margin-top: var(--pm-1);
+  width: 50%;
+  transform: translateX(50%);
+}
+
 /*================= 
       UTILITIES
   ================= */
+
+  .grid--center {
+    display: grid;
+    place-items: center;
+  }
