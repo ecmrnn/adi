@@ -57,6 +57,8 @@
 }
 
 .login__container {
+  max-width: 25.75em;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
